@@ -33,7 +33,7 @@ body {
 #menu-icon {
     font-size: 3.6rem;
     color: var(--main-color);
-    display: none ;
+    display: none;
 }
 
 .header{
@@ -658,21 +658,48 @@ span{
         text-align: left;
     }
 
+    .timeline-items::before{
+        width: 3px;
+    }
+
+    .timeline-items {
+        max-width: 1200px;
+        margin: auto;
+
+        flex-wrap:wrap;
+        position: relative;
+    }
+
     .timeline-iteme:nth-child(odd),
     .timeline-iteme:nth-child(even){
         padding-left: 37px;
     }
 
     .timeline-dot{
-        left: 0;
+        left: -2px;
     }
 
     .services {
         padding-bottom: 7rem;
     }
 
+    .service-box {
+        height: 400px;
+    }
+
     .testimonials .wrapper{
         grid-template-columns: repeat(1,1fr);
+    }
+
+    .testimonial-item {
+        min-height: 430px;
+        max-width: 450px;
+        background: #080808;
+        border: 3px solid rgba(238, 238, 238, 0.3);
+        border-radius: 2rem;
+        margin: 1rem 2rem;
+        padding: 3px 60px;
+        
     }
 
     .contact form {
@@ -700,11 +727,11 @@ span{
         border-bottom-left-radius: 2rem;
         border-left: 2px solid var(--main-color);
         border-bottom: 2px solid var(--main-color);
-        display: none;
+        /* display: none; */
     }
 
     .navbar .active {
-        display: block;
+        display: none;
     }
 
     .navbar a {
@@ -739,6 +766,10 @@ span{
 
     .services h2{
         margin-bottom: 3rem;
+    }
+
+    .service-box {
+        height: 400px;
     }
 
     .services-container {
